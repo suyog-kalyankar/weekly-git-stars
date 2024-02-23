@@ -25,11 +25,7 @@ const Repositories = () => {
 
   useEffect(() => {
     const localStorageRepoIds = localStorage.getItem("repoIds");
-    if (
-      localStorageRepoIds &&
-      localStorageRepoIds !== "undefined" &&
-      localStorageRepoIds !== null
-    ) {
+    if (localStorageRepoIds && localStorageRepoIds !== null) {
       setStarredRepositoryIDs(JSON.parse(localStorageRepoIds));
     } else {
       localStorage.setItem("repoIds", "");

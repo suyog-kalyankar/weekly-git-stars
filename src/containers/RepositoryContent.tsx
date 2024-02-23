@@ -19,11 +19,7 @@ const RepositoryContent = ({
     const localStorageRepoIds = localStorage.getItem("repoIds");
     let repositoryIds: number[];
     if (starredRepo.selected) {
-      if (
-        localStorageRepoIds &&
-        localStorageRepoIds !== "undefined" &&
-        localStorageRepoIds !== "null"
-      ) {
+      if (localStorageRepoIds) {
         repositoryIds = [...JSON.parse(localStorageRepoIds), starredRepo.id];
       } else {
         repositoryIds = [starredRepo.id];
