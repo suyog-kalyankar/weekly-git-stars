@@ -2,37 +2,52 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center-align {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.mid-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column !important;
+}
+
+.repo-content {
+  display: flex;
+  padding: 24px;
+  background: steelblue;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
   color: white;
+  box-shadow: inset -4px -5px 2px 1px rgb(13 13 85 / 50%);
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.initial-content {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column !important;
+  gap: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.star-btn {
+  color: white;
+  background: repeating-radial-gradient(black, transparent 100px);
+  text-transform: capitalize !important;
+}
+
+.no-repositories {
+  width: 100%;
+  align-items: center;
+}
+
+.chip {
+  background: repeating-radial-gradient(black, transparent 100px);
+  color: white !important;
+}
+
+.star-icon {
+  color: yellow;
 }
